@@ -1,0 +1,17 @@
+hal2='Yiyəlik hal'
+hal3='Yönlük hal'
+hal4='Təsirlik hal'
+hal5='Yerlik hal'
+hal6='Çıxışlıq hal'
+mens1='Mənsubiyyət 1 şəxs təkdə'#"IT"
+mens2='Mənsubiyyət 2 şəxs təkdə'#"IIT"
+mens3='Mənsubiyyət 3 şəxs təkdə'#"IIIT"
+mens4='Mənsubiyyət 1 şəxs cəmdə'#"IC"
+mens5='Mənsubiyyət 2 şəxs cəmdə'#"IIC"
+sex1='1 şəxs təkdə'#"1Tek"
+sex2='2 şəxs təkdə'#"2tek"
+sex3='3 şəxs təkdə'#"3tek"
+sex4='1 şəxs cəmdə'#"1cem"
+sex5='2 şəxs cəmdə'#"2cem"
+sex6='3 şəxs cəmdə'#"3cem"
+cem='Cəm'
