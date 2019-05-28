@@ -131,7 +131,7 @@ class sz:
         if self.nitq not in hallanan:
             return False
         for s in self.shekilciler:
-            if s.adi in ('yiyelik','yonluk','tesirlik','yerlik','cixisliq'):
+            if s.adi in (hal2,hal3,hal4,hal5,hal6):
                 return False
         return True
 
@@ -139,7 +139,7 @@ class sz:
         if self.nitq not in hallanan:
             return False
         for s in self.shekilciler:
-            if s.adi in ('yonluk','tesirlik','yerlik','cixisliq'):
+            if s.adi in (hal3,hal4,hal5,hal6):
                 return False
         return True
 
@@ -147,7 +147,7 @@ class sz:
         if self.nitq not in hallanan:
             return False
         for s in self.shekilciler:
-            if s.adi in ('yonluk'):
+            if s.adi in (hal3):
                 return True
         return False
 
@@ -155,7 +155,7 @@ class sz:
         if self.nitq not in hallanan:
             return False
         for s in self.shekilciler:
-            if s.adi in ('tesirlik'):
+            if s.adi in (hal4):
                 return True
         return False
 
@@ -163,7 +163,7 @@ class sz:
         if self.nitq not in hallanan:
             return False
         for s in self.shekilciler:
-            if s.adi in ('yerlik'):
+            if s.adi in (hal5):
                 return True
         return False
 
@@ -171,7 +171,7 @@ class sz:
         if self.nitq not in hallanan:
             return False
         for s in self.shekilciler:
-            if s.adi in ('cixisliq'):
+            if s.adi in (hal6):
                 return True
         return False
 
@@ -180,27 +180,27 @@ class sz:
             return False
         if req==0:
             for s in self.shekilciler:
-                if s.adi in ('IT','IIT','IIIT','IC','IIC'):
+                if s.adi in (mens1,mens2,mens3,mens4,mens5):
                     return True
         if req==1:
             for s in self.shekilciler:
-                if s.adi in ('IT'):
+                if s.adi in (mens1):
                     return True
         if req==2:
             for s in self.shekilciler:
-                if s.adi in ('IIT'):
+                if s.adi in (mens2):
                     return True
         if req==3:
             for s in self.shekilciler:
-                if s.adi in ('IIIT'):
+                if s.adi in (mens3):
                     return True
         if req==4:
             for s in self.shekilciler:
-                if s.adi in ('IC'):
+                if s.adi in (mens4):
                     return True
         if req==5:
             for s in self.shekilciler:
-                if s.adi in ('IIC'):
+                if s.adi in (mens5):
                     return True
 
         return False
@@ -216,11 +216,12 @@ class lug:
             file = open(pazz,'r',encoding='utf-8')
             sozder=file.readlines()
             for k in sozder:
-                if k[:3] in lug.dic.keys():
-                    lug.dic[k[:3]].append(k)
+                zaz=k.split('\t')[0]
+                if zaz[:3] in lug.dic.keys():
+                    lug.dic[zaz[:3]].append(k)
                 else:
-                    lug.dic[k[:3]]=[k]
-                    
+                    lug.dic[zaz[:3]]=[k]
+
 
             return self.de(ad)
 
@@ -231,7 +232,7 @@ class lug:
             lug.dic[ad]=[]
             return []
 
-            
+
 
     def de(self,ad):
         if ad in lug.dic.keys():
