@@ -21,13 +21,13 @@ s_fel = [sekilci(['ağan','əgən'],1,'0',"Feldən düzələn sifət 1"),
 """
 
 
-s_cem=[sekilci(['lar','lər'],1,'0',"Cem")]
-s_hal=[sekilci(['nın','nin','nun','nün'],3,'-',"yiyelik"),sekilci(['ya','yə'],1,'-',"yonluk"),sekilci(['nı','ni','nu','nü'],3,'-',"tesirlik"),
-       sekilci(['da','də'],1,'0',"yerlik"),sekilci(['dan','dən'],1,'0',"cixisliq")]
-s_men=[sekilci(['ım','im','um','üm'],3,'-',"Mənsubiyyət 1"),sekilci(['ın','in','un','ün'],3,'-',"II"),sekilci(['sı','si','su','sü'],3,'-',"III"),
-       sekilci(['ımız','imiz','umuz','ümüz'],3,'-',"IC"),sekilci(['ınız','iniz','unuz','ünüz'],3,'0',"IIC")]
-s_sex=[sekilci(['yam','yəm'],1,'-',"1Tek"),sekilci(['san','sən'],1,'0',"2tek"),sekilci(['dır','dir','dur','dür'],3,'0',"3tek"),
-       sekilci(['yıq','yik','yuq','yük'],3,'-',"1cem"),sekilci(['sınız','siniz','sunuz','sünüz'],3,'0',"2cem"),sekilci(['dırlar','dirlər','durlar','dürlər'],3,'0',"3cem")]
+s_cem=[sekilci(['lar','lər'],1,'0',cem)]
+s_hal=[sekilci(['nın','nin','nun','nün'],3,'-',hal2),sekilci(['ya','yə'],1,'-',hal3),sekilci(['nı','ni','nu','nü'],3,'-',hal4),
+       sekilci(['da','də'],1,'0',hal5),sekilci(['dan','dən'],1,'0',hal6)]
+s_men=[sekilci(['ım','im','um','üm'],3,'-',sex1),sekilci(['ın','in','un','ün'],3,'-',mens2),sekilci(['sı','si','su','sü'],3,'-',mens3),
+       sekilci(['ımız','imiz','umuz','ümüz'],3,'-',mens4),sekilci(['ınız','iniz','unuz','ünüz'],3,'0',mens5)]
+s_sex=[sekilci(['yam','yəm'],1,'-',sex1),sekilci(['san','sən'],1,'0',sex2),sekilci(['dır','dir','dur','dür'],3,'0',sex3),
+       sekilci(['yıq','yik','yuq','yük'],3,'-',sex4),sekilci(['sınız','siniz','sunuz','sünüz'],3,'0',sex5),sekilci(['dırlar','dirlər','durlar','dürlər'],3,'0',sex6)]
 
 
 for pol in s_cem:
@@ -35,8 +35,8 @@ for pol in s_cem:
 for pol in s_men:
     pol.sonra=[s_hal,s_sex]
 for pol in s_hal:
-    if pol.adi=='yonluk':
-        pol.sonra=[[sekilci(['dır','dir','dur','dür'],3,'0',"3tek"),sekilci(['dırlar','dirlər','durlar','dürlər'],3,'0',"3cem")]]
+    if pol.adi==hal3:
+        pol.sonra=[[sekilci(['dır','dir','dur','dür'],3,'0',sex3),sekilci(['dırlar','dirlər','durlar','dürlər'],3,'0',sex6)]]
     else:
         pol.sonra=[s_sex]
 
