@@ -8,7 +8,7 @@ dey_feil=['f.']
 dey_evez=['ev.']
 dey_sif=['sif.']
 dey_say=['say.']
-dey_zerf = ['z.']
+dey_zerf = ['z.','zer.']
 hallanan=['Isim']
 mensub=['Isim']
 
