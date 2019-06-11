@@ -46,3 +46,5 @@ v_s='Vacib şəkli'#"vacib sekli"
 l_s='Lazım şəkli'#"lazim sekli"
 s_s='Şərt şəkli'#"sert sekli"
 d_s='Davam şəkli'#"davam sekli"
+i_la='ilə hissəciyi'
+i_daki='dakı hissəciyi'
