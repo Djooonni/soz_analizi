@@ -17,7 +17,8 @@ class sekilci:
 
     def check(self, soz, shekilci):
         #Nicat burani qurdala
-        if(soz.ozu[-1]=='t' and shekilci[0] in sait):
+        
+        if(soz.ozu[-1]=='t' and shekilci[0] in sait and soz.nitq=='Feil'):
             soz=soz.ozu[:-1]+'d'
         else:
             soz=soz.ozu

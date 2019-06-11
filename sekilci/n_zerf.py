@@ -26,4 +26,4 @@ for pol in s_fel:
     pol.sonra  = [i_sex]
 """
 
-n_say = [zerf_cem, zerf_hal,zerf_men,zerf_sex] #isimden duzelen
+n_zerf = [zerf_cem, zerf_hal,zerf_men,zerf_sex] #isimden duzelen
