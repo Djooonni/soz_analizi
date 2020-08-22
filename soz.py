@@ -38,6 +38,9 @@ class sz:
             self.saitler=[]
             self=sz.istisnalar(self)
 
+    def __str__(self):
+        return 'ozu: '+self.ozu+' koku: '+self.kok+'seklci: '+str(self.shekilciler[0].adi)
+
     def nitq(self,n):
         self.nitq=n;
         self=self.istisnalariTedbiqEle()

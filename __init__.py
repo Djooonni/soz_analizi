@@ -1,5 +1,7 @@
 from soz_analizi import *
 from soz_analizi.soz import *
+from soz_analizi.soz_obyekt import *
+from soz_analizi.cumle import cumle as cm
 import nltk
 
 def feildi(soz):
@@ -38,7 +40,8 @@ def zerfdi(soz):
             return True
     return False
 
-
+def cumle(metn):
+    return cm(metn)
 def az(a,b):
     if (len(a)>len(b)):
         return True
@@ -106,7 +109,7 @@ def nitqi(soz, mode):
 def bol(txt):
     words = nltk.word_tokenize(txt)
     return words
-
+    
 def metn_oxu(metn):
 
     luget=bol(metn)
