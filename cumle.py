@@ -23,3 +23,5 @@ class cumle:
                     s_o.add(w)
 
             self.vahidler.append(s_o)
+    def arasdir(self):
+        return self.vahidler
